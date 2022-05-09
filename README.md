@@ -1,7 +1,4 @@
-# 023-Server data maintenance web service and API
-
-
-# Fitness Goal
+# 023-Fitness Goal
 
 - Set everyday walking goals.
 - Show health notification after certain time.
