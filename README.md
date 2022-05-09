@@ -1,12 +1,14 @@
 # 023-Server data maintenance web service and API
 
 
+# Fitness Goal
 
-## Getting started
+- Set everyday walking goals.
+- Show health notification after certain time.
+- Record my everyday walking distance, steps, percentage of walking progress and calogies spent.
+- Login my data from other computer.
+- Additionally, add user data for friends and family.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
 ## Add your files
 
@@ -76,11 +78,10 @@ Tell people where they can go to for help. It can be any combination of an issue
 If you have ideas for releases in the future, it is a good idea to list them in the README.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+- Md Shayemur Rahman
+- Jannatun Noor
+- Efajur Rahman
 
 ## Authors and acknowledgment
 Show your appreciation to those who have contributed to the project.
