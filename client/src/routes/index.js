@@ -16,7 +16,7 @@ const Index = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route
