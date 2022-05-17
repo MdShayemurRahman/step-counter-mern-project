@@ -1,25 +1,53 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&family=Montserrat&family=Ubuntu&display=swap');
+
+/* 
+font-family: 'Libre Bodoni', serif;
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.googleapp-header, .error-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+/* Navbar Styling */
 nav {
+  font-family: 'Ubuntu', sans-serif;
   background-color: #2a2a2a;
-  padding: 1rem;
+  padding: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
 }
 
-.nav-link {
+nav .nav-link {
   color: #fff;
   text-decoration: none;
-  margin: 0 1rem 0 1rem;
+  margin: 0 2rem;
+}
+nav .active {
+  color: #fff104;
 }
 
+/* Error page styling */
 .error-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
+/*  */

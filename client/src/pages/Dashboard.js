@@ -1,10 +1,11 @@
 import React from "react";
-
+import Navbar from "../layouts/Navbar";
 const Dashboard = () => {
   return (
-    <div>
+    <>
+      <Navbar />
       <h1>Dashboard Page</h1>
-    </div>
+    </>
   );
 };
 

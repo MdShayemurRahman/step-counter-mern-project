@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
+import { GoogleLogin } from "react-google-login";
 
 const Login = () => {
-  return (
-    <div>
-      Login with Google
-    </div>
-  )
-}
+  const handleFailure = (result) => {
+    alert(result);
+  };
+  const handleLogin = (googleData) => {
+    console.log(googleData);
+  };
 
-export default Login
+  return (
+    <div className="googleapp-header">
+      <GoogleLogin
+        clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+        buttonText="Login with Google"
+        onSuccess={handleLogin}
+        onFailure={handleFailure}
+        cookiePolicy={"single_host_origin"}
+      ></GoogleLogin>
+    </div>
+  );
+};
+
+export default Login;

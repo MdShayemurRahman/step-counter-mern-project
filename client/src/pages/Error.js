@@ -1,13 +1,20 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import errorImg from "../images/404-img.gif";
 
 const Error = () => {
+  const navigate = useNavigate();
   return (
     <div className="error-content">
       <img src={errorImg} alt="Error-page :(" />
       <h3>Oops... Page not found!</h3>
-      <Link to="/">Back to homepage</Link>
+      <button
+        onClick={() => {
+          navigate("/home");
+        }}
+      >
+        Go to Homepage
+      </button>
     </div>
   );
 };
