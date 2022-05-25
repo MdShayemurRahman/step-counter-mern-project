@@ -1,5 +1,6 @@
 import React from "react";
-import { GoogleLogin } from "react-google-login";
+import { GoogleLogin } from "react-google-login"; 
+// installation: npm install react-google-login --legacy-peer-deps
 
 const Login = () => {
   const handleFailure = (result) => {
