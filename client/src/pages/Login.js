@@ -1,18 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoogleLogin, GoogleLogout } from "react-google-login";
+
 // installation: npm install react-google-login --legacy-peer-deps
-import { refreshTokenSetup } from "../utils/refreshToken";
 
 const Login = () => {
-  const [loginData, setLoginData] = React.useState(
+  const [loginData, setLoginData] = useState(
     localStorage.getItem("loginData")
       ? JSON.parse(localStorage.getItem("loginData"))
       : null
   );
 
   const handleFailure = (result) => {
-    console.log("Login failed: res:", result);
-    alert(`Failed to login. 😢`);
+    alert(result);
   };
 
   const handleLogin = async (googleData) => {
@@ -40,6 +39,7 @@ const Login = () => {
       {loginData ? (
         <div>
           <h3>You logged in as {loginData.email}</h3>
+          <h4>You logged in as {loginData.email}</h4>
           <GoogleLogout
             clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
             buttonText="Logout"
@@ -53,6 +53,7 @@ const Login = () => {
           onSuccess={handleLogin}
           onFailure={handleFailure}
           cookiePolicy={"single_host_origin"}
+          isSignedIn={true}
         ></GoogleLogin>
       )}
     </div>
