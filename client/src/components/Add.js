@@ -9,7 +9,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { postData } from "../Api";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory, useLocation, Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   forms: {
@@ -30,6 +30,7 @@ const Add = () => {
   const { number } = data;
   const classes = useStyles();
   const history = useHistory();
+  // const navigate = useNavigate();
   const search = useLocation().search;
   const userId = search.slice(1);
 
@@ -38,8 +39,9 @@ const Add = () => {
   };
 
   const addUser = async () => {
-    await postData({ uid: userId, number: data.number });
-    history.push("/dashboard?" + userId);
+    await postData({ uid: userId, number: data.number }).then(
+      history.push("/dashboard?" + userId)
+    );
   };
 
   return (

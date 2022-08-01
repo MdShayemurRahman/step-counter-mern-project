@@ -78,6 +78,7 @@ export const setGoals = async (req, res) => {
   });
   console.log(data);
   data.save();
+  
 };
 
 function googlefit(res) {
